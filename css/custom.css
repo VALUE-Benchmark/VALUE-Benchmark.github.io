@@ -165,6 +165,42 @@ html {
   table td {
      text-align: center; 
   }
+  .performanceTableWide {
+    margin: 10px 0px;
+    font-size: 80%;
+  }
+  .performanceTableWide .institution {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0px;
+  }
+  .performanceTableWide .date {
+    font-weight: normal;
+    background-color: #777;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+  }
+  .performanceTableWide .rank{
+    margin-bottom: 5px;
+  }
+  .performanceTableWide td,
+  .performanceTableWide th {
+    text-align: center;
+    max-width: 200px;
+    max-height: 100px;
+    padding: 10px;
+    vertical-align: middle;
+  }
+  .performanceTableWide .wBackground{
+    background-color:#f3f3f3;
+  }
   .performanceTable {
     margin: 10px 0px;
     font-size: 90%;
@@ -172,6 +208,7 @@ html {
   .performanceTable .institution {
     font-style: italic;
     font-weight: 300;
+    margin: 0px;
   }
   .performanceTable .date {
     font-weight: normal;
@@ -186,10 +223,14 @@ html {
     vertical-align: baseline;
     border-radius: .25em;
   }
+  .performanceTable .rank{
+    margin-bottom: 5px;
+  }
   .performanceTable td,
   .performanceTable th {
     text-align: center;
-    max-width: 150px;
+    max-width: 100px;
+    vertical-align: middle;
   }
   .performanceTable .wBackground{
     background-color:#f3f3f3;
