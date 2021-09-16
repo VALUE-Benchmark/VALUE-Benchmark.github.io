@@ -64,7 +64,7 @@ function compute_mean_rank(data, tasks){
         if (!key.includes("_rank")){
             continue;
         }
-        key = key.split("_")[0];
+        key = key.replace('_rank', '');
         if (tasks.has(key)){
             for (let i = 0; i < value.length; i++) {
                 tmp_mean_rank[i] +=  value[i]/tasks.size;}
@@ -320,6 +320,7 @@ value_data.forEach(entry => {
     appendScores(allTable, entry, all_tasks);})
 
 let ret_data = getArray(all_data["ret"]);
+// console.log(ret_data)
 ret_data.sort((a, b) => (a.global_rank > b.global_rank) ? 1 : -1)
 ret_data.forEach(entry => {
     appendScores(retTable, entry, retrieval_tasks);})
