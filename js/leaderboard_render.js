@@ -34,8 +34,8 @@ function compute_rank_break_tie(scores1, scores2){
     var temp_list = [];
     scores1.forEach((s1, i) => {
         let temp = {};
-        temp["s1"] = s1;
-        temp["s2"] = scores2[i];
+        temp["s1"] = s1.toFixed(2);
+        temp["s2"] = scores2[i].toFixed(2);
         temp_list.push(temp);
     });
     var sorted = temp_list.slice().sort(function(a,b){
@@ -67,9 +67,9 @@ function compute_mean_rank(data, tasks){
         key = key.replace('_rank', '');
         if (tasks.has(key)){
             for (let i = 0; i < value.length; i++) {
-                tmp_mean_rank[i] +=  value[i]/tasks.size;}
+                tmp_mean_rank[i] +=  (value[i]/tasks.size);}
         }
-    }
+    } 
     return tmp_mean_rank;
 }
 
@@ -221,6 +221,7 @@ function prepro_data(file){
     caption_parsed_data['mean_rank'] = compute_mean_rank(caption_parsed_data, caption_tasks);
     caption_parsed_data['global_rank'] = compute_rank_break_tie(
         caption_parsed_data["mean_rank"], caption_parsed_data["meta_ave"]);
+    console.log(caption_parsed_data)
     return {
         "value": all_parsed_data, 
         "ret": retrieval_parsed_data,
