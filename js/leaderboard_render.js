@@ -18,7 +18,7 @@ function readTextFile(file)
     return fileContent;
 }
 
-var data_path = "./data/leaderboard_score.jsonl"
+var data_path = "./data/leaderboard_score.jsonl" // "./data/local_data.jsonl", "./data/leaderboard_score.jsonl" 
 const retrieval_tasks = new Set(["tvr", "how2r", "yc2r", "vatex_en_r"]);
 const qa_tasks = new Set(["tvqa", "how2qa", "violin", "vlep"]);
 const caption_tasks = new Set(["tvc", "yc2c", "vatex_en_c"]);
