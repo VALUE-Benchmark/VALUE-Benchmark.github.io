@@ -316,7 +316,112 @@ booktitle = {35th Conference on Neural Information Processing Systems (NeurIPS 2
 year = {2021}
 } 
                         </code></pre>
-                    </details>
+                        <h6>We sincerely thank all dataset contributors to VALUE benchmark, please cite the following datasets if you use the VALUE benchmark.</h6>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_tvr">TVR</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_how2r">How2R</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_youcook2">YouCook2</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_vatex">VATEX</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_tvqa">TVQA</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_how2qa">How2QA</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_violin">VIOLIN</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_vlep">VLEP</button>
+                        <button type="button" class="btn btn-light" onclick="hide_display_citation_div(this.id)" id="button_bibtex_tvc">TVC</button>
+                        <div style="display: none;" id="bibtex_tvqa">
+                            <pre><code>
+@inproceedings{lei2018tvqa,
+    title={TVQA: Localized, Compositional Video Question Answering},
+    author={Lei, Jie and Yu, Licheng and Bansal, Mohit and Berg, Tamara L},
+    booktitle={EMNLP},
+    year={2018}
+    }
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_tvr">
+                            <pre><code>
+@inproceedings{lei2020tvr,
+    title={TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval},
+    author={Lei, Jie and Yu, Licheng and Berg, Tamara L and Bansal, Mohit},
+    booktitle={ECCV},
+    year={2020}
+    }
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_tvc">
+                            <pre><code>
+@inproceedings{lei2020tvr,
+    title={TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval},
+    author={Lei, Jie and Yu, Licheng and Berg, Tamara L and Bansal, Mohit},
+    booktitle={ECCV},
+    year={2020}
+    }
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_how2r">
+                             <pre><code>
+@inproceedings{li2020hero,
+title={HERO: Hierarchical Encoder for Video+ Language Omni-representation Pre-training},
+author={Li, Linjie and Chen, Yen-Chun and Cheng, Yu and Gan, Zhe and Yu, Licheng and Liu, Jingjing},
+booktitle={EMNLP},
+year={2020}
+}
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_how2qa">
+                            <pre><code>
+@inproceedings{li2020hero,
+title={HERO: Hierarchical Encoder for Video+ Language Omni-representation Pre-training},
+author={Li, Linjie and Chen, Yen-Chun and Cheng, Yu and Gan, Zhe and Yu, Licheng and Liu, Jingjing},
+booktitle={EMNLP},
+year={2020}
+}
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_youcook2">
+                            <pre><code>
+@inproceedings{ZhXuCoAAAI18,
+    author={Zhou, Luowei and Xu, Chenliang and Corso, Jason J},
+    title = {Towards Automatic Learning of Procedures From Web Instructional Videos},
+    booktitle = {AAAI},
+    year = {2018}
+}
+@inproceedings{ZhZhCoCVPR2018,
+    title={End-to-End Dense Video Captioning with Masked Transformer},
+    author={Zhou, Luowei and Zhou, Yingbo and Corso, Jason J and Socher, Richard and Xiong, Caiming},
+    booktitle={CVPR},
+    year={2018}
+}
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_vatex">
+                            <pre><code>
+@InProceedings{Wang_2019_ICCV,
+    author = {Wang, Xin and Wu, Jiawei and Chen, Junkun and Li, Lei and Wang, Yuan-Fang and Wang, William Yang},
+    title = {VaTeX: A Large-Scale, High-Quality Multilingual Dataset for Video-and-Language Research},
+    booktitle = {ICCV},
+    year = {2019}
+    }
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_vlep">
+                            <pre><code>
+@inproceedings{lei2020vlep,
+    title={What is More Likely to Happen Next? Video-and-Language Future Event Prediction},
+    author={Lei, Jie and Yu, Licheng and Berg, Tamara L and Bansal, Mohit},
+    booktitle={EMNLP},
+    year={2020}
+    }
+                            </code></pre>
+                        </div>
+                        <div style="display: none;" id="bibtex_violin">
+                            <pre><code>
+@inproceedings{liu2020violin,
+    title={Violin: A large-scale dataset for video-and-language inference},
+    author={Liu, Jingzhou and Chen, Wenhu and Cheng, Yu and Gan, Zhe and Yu, Licheng and Yang, Yiming and Liu, Jingjing},
+    booktitle={CVPR},
+    year={2020}
+    }
+                            </code></pre>
+                        </div>
                 </div>
             </div>
 
@@ -351,5 +456,6 @@ year = {2021}
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/sorttable.js"></script>
+        <script src="js/hide_display_citation_div.js"></script>
     </body>
 </html>
